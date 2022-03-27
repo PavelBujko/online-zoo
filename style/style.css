@@ -29,11 +29,6 @@ span {
   margin: auto;
 }
 
-.container-pets {
-  width: 1600px;
-  margin: auto;
-}
-
 nav {
   display: flex;
   height: 110px;
@@ -49,6 +44,7 @@ nav {
 
 .rigth-part-header img {
   padding: 30px 0 130px;
+  width: 100%;
 }
 
 .left-part-nav {
@@ -321,7 +317,7 @@ nav a.active {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  width: 480px;
+  width: 30%;
   margin: 20px 20px 20px 0;
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
@@ -399,16 +395,17 @@ nav a.active {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  background-position: center;
   position: relative;
 }
 
-.rigth-part-select {
+.row-pay{
   position: relative;
 }
 
 .penguin {
   position: absolute;
-  top: 400px;
+  bottom: 20px;
 }
 
 .bamboopay {
@@ -481,7 +478,7 @@ nav a.active {
 
 .testimonials {
   background-color: #f5f9fa;
-  padding: 117px;
+  padding: 117px 0 117px;
 }
 
 .testimonials h3 {
@@ -520,7 +517,7 @@ nav a.active {
 .comment {
   background: #ffffff;
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
-  width: 480px;
+  width: 100%;
   height: 190px;
   position: relative;
 }
@@ -539,6 +536,10 @@ nav a.active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.comment-with-human{
+  width: 30%;
 }
 
 .human {
@@ -659,4 +660,82 @@ footer img {
 
 .rigth-part-footer p {
   color: #ffffff;
+}
+
+.line{
+  width: 30%;
+}
+
+.line img{
+  width: 100%;
+}
+
+@media(max-width: 1667px){
+  .donation-button{
+    width: 250px;
+  }
+
+  .container{
+    width: 95%;
+  }
+
+  .tree-pay, .bamboopay{
+    right: -50px;
+    width: 100px;
+  }
+}
+
+@media(max-width: 1452px){
+  .tree-pay{
+    left: -50px;
+  }
+
+  .bamboopay{
+    visibility: hidden;
+  }
+}
+
+@media(max-width: 1192px){
+  .tree-third{
+    visibility: hidden;
+  }
+
+  .pandaart{
+    left: 400px;
+  }
+
+  .bamboo{
+    left: 490px;
+  }
+}
+
+@media(max-width: 1293px){
+  .left-part-header{
+    padding-top: 50px;
+  }
+
+  .watch-now{
+    margin-top: 30px;
+  }
+
+  .container{
+    width: 90%;
+  }
+}
+
+
+@media(max-width: 1190px){
+  .bg-img-pay{
+    background-position: unset;
+  }
+
+  .bg-img-pay h2{
+    padding-left: 80px;
+  }
+
+  .donation-button{
+    margin-right: 80px;
+  }
+  
+  
 }
