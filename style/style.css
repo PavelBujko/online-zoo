@@ -11,7 +11,10 @@ h4 {
   font-family: "Rubik", sans-serif;
 }
 
-p, a, button, h5 {
+p,
+a,
+button,
+h5 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -33,6 +36,32 @@ nav {
   display: flex;
   height: 110px;
   background-color: #2a8086;
+}
+
+.row-button {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0 100px;
+  padding-bottom: 100px;
+}
+
+.row-button button {
+  margin: 0;
+}
+
+.row-button .donation-button {
+  display: none;
+  color: #0d444d;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.line-t{
+  display: none;
 }
 
 .row-head {
@@ -367,7 +396,7 @@ nav a.active {
   border-top: 1px solid #f5f9fa;
 }
 
-.about-animal h3{
+.about-animal h3 {
   padding-top: 15px;
 }
 
@@ -399,7 +428,7 @@ nav a.active {
   position: relative;
 }
 
-.row-pay{
+.row-pay {
   position: relative;
 }
 
@@ -438,11 +467,11 @@ nav a.active {
   transition: 0.5s;
 }
 
-.donation-button:hover{
- background: #C5E1E5;
- color: #0D444D;
- transition: 0.5s;
- filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+.donation-button:hover {
+  background: #c5e1e5;
+  color: #0d444d;
+  transition: 0.5s;
+  filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
 }
 
 .circle-card {
@@ -524,11 +553,15 @@ nav a.active {
 
 .comment .data {
   padding: 28px 45px 9px;
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
 
 .comment p {
-  padding: 0px 45px 9px;
+  padding: 0px 45px 40px;
+}
+
+.comment {
+  height: auto;
 }
 
 .comments {
@@ -538,7 +571,7 @@ nav a.active {
   justify-content: space-between;
 }
 
-.comment-with-human{
+.comment-with-human {
   width: 30%;
 }
 
@@ -549,6 +582,10 @@ nav a.active {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
+}
+
+.but{
+  display: none;
 }
 
 .human h5 {
@@ -625,7 +662,7 @@ nav a.active {
   transition: 500ms;
 }
 
-.aminal img:hover{
+.aminal img:hover {
   transform: rotate(-180deg);
   transition: 500ms;
 }
@@ -662,80 +699,452 @@ footer img {
   color: #ffffff;
 }
 
-.line{
+.line {
   width: 30%;
 }
 
-.line img{
+.line img {
   width: 100%;
 }
 
-@media(max-width: 1667px){
-  .donation-button{
+.burger {
+  width: 35px;
+  display: none;
+}
+
+.burger button {
+  background-color: #ffffff00;
+  border: 0;
+}
+
+.logo-burger {
+  display: none;
+}
+
+.bt-none{
+  display: none;
+}
+
+.select-none{
+  display: none;
+}
+
+.butn-none{
+  display: none;
+}
+
+.whatch-vid-none{
+  display: none;
+}
+
+@media (max-width: 1667px) {
+  .donation-button {
     width: 250px;
   }
 
-  .container{
+  .container {
     width: 95%;
   }
 
-  .tree-pay, .bamboopay{
+  .tree-pay,
+  .bamboopay {
     right: -50px;
     width: 100px;
   }
 }
 
-@media(max-width: 1452px){
-  .tree-pay{
+@media (max-width: 1452px) {
+  .tree-pay {
     left: -50px;
   }
 
-  .bamboopay{
-    visibility: hidden;
-  }
 }
 
-@media(max-width: 1192px){
-  .tree-third{
+@media (max-width: 1192px) {
+  .tree-third {
     visibility: hidden;
   }
 
-  .pandaart{
+  .pandaart {
     left: 400px;
   }
 
-  .bamboo{
+  .bamboo {
     left: 490px;
+  }
+
+  .bamboopay{
+    display: none;
   }
 }
 
-@media(max-width: 1293px){
-  .left-part-header{
+@media (max-width: 1293px) {
+  .left-part-header {
     padding-top: 50px;
   }
 
-  .watch-now{
+  .watch-now {
     margin-top: 30px;
   }
 
-  .container{
+  .container {
     width: 90%;
   }
 }
 
-
-@media(max-width: 1190px){
-  .bg-img-pay{
-    background-position: unset;
+@media (max-width: 1190px) {
+  .bg-img-pay {
+    background-image: url(../img/framebgtwo.png);
   }
 
-  .bg-img-pay h2{
-    padding-left: 80px;
+  .row-pay {
+    padding-top: 170px;
   }
 
-  .donation-button{
-    margin-right: 80px;
+  .watch-now {
+    margin: 30px 0 250px;
   }
-  
-  
+
+  .pets-in-zoo {
+    padding-bottom: 20px;
+  }
+
+  .bamboopay, .tree-pay {
+    visibility: hidden;
+  }
+
 }
+
+@media (max-width: 1141px) {
+  .rigth-part-nav,
+  .left-part-nav,
+  .tree-second {
+    display: none;
+  }
+
+  .burger,
+  .logo-burger {
+    display: inline-block;
+  }
+
+  .center {
+    margin: 50px 0 30px;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .left-part-header {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 930px) {
+
+  .img-animals {
+    width: 90%;
+    height: 100%;
+  
+  }
+  .left-part-header h1,
+  span {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .left-part-header p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .watch-now {
+    margin: 30px 0 180px;
+    font-size: 14px;
+    padding: 10px 50px;
+  }
+
+  .rigth-part-header {
+    width: 80%;
+  }
+
+  .comment p {
+    font-size: 14px;
+  }
+
+  .left-part-beau-anim div:nth-child(2n) {
+    display: none;
+  }
+
+  .img-animals {
+    padding: 0;
+  }
+
+  .comment {
+    width: 256px;
+  }
+
+  .comments {
+    overflow: scroll;
+  }
+
+  .comment-with-human {
+    width: auto;
+    margin-right: 50px;
+  }
+  .line{
+    display: none;
+  }
+
+  .line-t{
+    display: inline-block;
+  }
+
+  .circle-card p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 660px) {
+  .card{
+    width: 45%;
+  }
+
+  .cards .card:nth-child(5), .card:nth-child(6){
+    display: none;
+  }
+
+  .center {
+    margin: 20px 0 30px;
+  }
+
+  .pets-in-zoo {
+    padding-bottom: 0px;
+  }
+
+  .row-pay {
+    padding-top: 15px;
+  }
+
+  .testimonials,
+  .look-at-animals {
+    padding: 30px 0 30px;
+  }
+
+  .bg-img-pay .center {
+    padding: 80px 0 130px;
+  }
+
+  .row-button .donation-button {
+    display: inline-block;
+    width: 170px;
+    margin-left: 30px;
+  }
+
+  .bg-img-blue {
+    background-image: url(../img/Hero.png);
+    background-position: center;
+  }
+
+  .watch-now {
+    padding: 10px 5px;
+    font-size: 13px;
+    width: 170px;
+    margin-right: 30px;
+  }
+
+  .bg-img-pay .row-pay{
+    padding-top: 180px;
+  }
+
+  .row-button {
+    margin: 30px 0 50px;
+  }
+
+  .left-part-header{
+    padding: 0;
+  }
+
+  .pandaart{
+    left: 250px;
+  }
+
+  .tree-first{
+    left: 400px;
+  }
+
+  .bamboo{
+    left: 300px;
+  }
+
+  .favorite{
+    display: none;
+  }
+
+  .but{
+    display: flex;
+  }
+
+  .but button{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 580px){
+  .circle{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+  }
+
+  .bg-img-pay .center{
+    padding: 0 0 0 0;
+    margin: 0 0 100px;
+  }
+
+  .bg-img-pay .row-pay{
+    padding-bottom: 30px;
+  }
+
+  .tree-first{
+    display: none;
+  }
+}
+
+@media(max-width: 528px){
+  .row-head{
+    flex-direction: column;
+  }
+
+  .rigth-part-header img{
+    display: none;
+  }
+
+  .left-part-header{
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .left-part-header h1, span{
+    font-size: 32px;
+  }
+
+  .row-button button, .row-button .donation-button{
+    width: 45%;
+  }
+
+  .row-button{
+    padding-bottom: 50px;
+    justify-content: space-between;
+  }
+
+  .how-it-work .row{
+    flex-direction: column;
+  }
+
+ .how-it-work .circle-card{
+   margin-bottom: 30px;
+ }
+
+ .card{
+   width: 100%;
+ }
+
+ .cards .card:nth-child(3), .card:nth-child(4){
+  display: none;
+}
+
+.bg-img-pay .center{
+  flex-direction: column;
+  margin: 0 0 180px;
+}
+
+.bg-img-pay .row-pay{
+  padding-top: 300px;
+}
+
+.line-t{
+  transform: rotate(90deg);
+}
+
+.bt-none{
+  display: inline-block;
+  margin: 35px 0 30px;
+  width: 100%;
+}
+
+
+.comments{
+  overflow: visible;
+  flex-direction: column;
+}
+.comment{
+  width: 100%;
+}
+
+.comment-with-human{
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.left-part-beau-anim{
+  flex-wrap: wrap;
+
+}
+
+.left-part-beau-anim div:nth-child(2n) {
+  display: inline;
+}
+
+.aminal{
+  width: 30%;
+  text-align: center;
+}
+
+.aminal:last-child, .donation-button{
+  display: none;
+}
+
+.select-none{
+  display: flex;
+  transform: rotate(90deg);
+}
+
+.rigth-part-select, .feedback{
+  display: none;
+}
+
+.look-at-animals .row{
+  flex-direction: column;
+}
+
+.butn-none{
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.whatch-vid-none{
+  display: inline-block;
+  width: 90%;
+}
+
+.row-button{
+  padding-bottom: 180px;
+}
+}
+
+@media(max-width: 436px){
+  .pandaart{
+    left: 90px;
+  }
+
+  .bamboo{
+    left: 180px;
+  }
+
+}
+
